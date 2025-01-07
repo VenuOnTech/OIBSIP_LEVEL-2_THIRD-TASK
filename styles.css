@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background: #121212;
+    color: #e4e4e4;
+  }
+  
+  .app-container {
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark .app-container {
+    background: #1e1e1e;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #2575fc;
+  }
+  
+  #theme-toggle {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #2575fc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #theme-toggle:hover {
+    background: #6a11cb;
+  }
+  
+  #search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: 2px solid #6a11cb;
+    font-size: 1rem;
+  }
+  
+  #task-input input,
+  #task-input select,
+  #task-input button {
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: 2px solid #6a11cb;
+  }
+  
+  #task-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #task-controls button {
+    padding: 10px 20px;
+    border: none;
+    background: #2575fc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #task-controls button:hover {
+    background: #6a11cb;
+  }
+  
+  /* Task Containers */
+  #pending-tasks-container,
+  #completed-tasks-container {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 10px 0;
+    background: linear-gradient(135deg, #f5f7fa, #e4e4e4);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  li.completed {
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    text-decoration: line-through;
+  }
+/* Filter Controls */
+#filter-controls {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #filter-controls label,
+  #filter-controls input,
+  #filter-controls select,
+  #filter-controls button {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  #filter-controls button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #filter-controls button:hover {
+    background: #6a11cb;
+  }
+    

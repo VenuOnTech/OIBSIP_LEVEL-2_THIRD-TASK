@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>To-Do App</h1>
+      <button id="theme-toggle">Dark Mode</button>
+      <input type="text" id="search-bar" placeholder="Search tasks...">
+    </header>
+    <main>
+      <section id="task-input">
+        <input type="text" id="task-name" placeholder="Task name" />
+        <input type="date" id="due-date" />
+        <select id="category">
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+        </select>
+        <select id="priority">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button id="add-task-btn">Add Task</button>
+      </section>
+      <section id="progress"><br>
+        <h2>Task Progress</h2>
+        <div id="progress-bar-container">
+          <div id="progress-bar"></div>
+        </div>
+      </section>
+      <section id="task-controls">
+        <button id="toggle-pending-btn">Show Pending Tasks</button>
+        <button id="toggle-completed-btn">Show Completed Tasks</button>
+        <div id="filter-controls" style="display: none;">
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date">
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date">
+          <label for="priority-filter">Priority:</label>
+          <select id="priority-filter">
+            <option value="All">All</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <button id="apply-filter-btn">Apply Filter</button>
+          <button id="clear-filter-btn">Clear Filter</button>
+        </div>
+      </section>
+      <section id="task-list">
+        <div id="pending-tasks-container">
+          <h2>Pending Tasks</h2>
+          <ul id="pending-tasks"></ul>
+        </div>
+        <div id="completed-tasks-container">
+          <h2>Completed Tasks</h2>
+          <ul id="completed-tasks"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
